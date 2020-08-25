@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import createProject from '../store/actions/Projectactions'
 class Createproject extends Component {
   state = {
-   Title:'',
+   title:'',
    content:''
   }
   handleChange = (e) => {
@@ -23,7 +23,7 @@ class Createproject extends Component {
           <h5 className="grey-text text-darken-3">Create Project</h5>
           <div className="input-field">
             <label htmlFor="Title">Title</label>
-            <input type="text" id='Title' onChange={this.handleChange} />
+            <input type="text" id='title' onChange={this.handleChange} />
           </div>
           <div className="input-field">
           <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
