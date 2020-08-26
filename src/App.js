@@ -3,7 +3,7 @@ import {makestyles} from '@material-ui/core'
 import Navbar from './components/layout/Navbar';
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
 import Dashboard from './components/dasboard/Dashboard';
-import ProjectDetails from './components/projects/Projectdetails';
+import Projectdetails from './components/projects/Projectdetails';
 import Signin from './components/auth/Signin';
 import Signup from './components/auth/Signup';
 import Createproject from './components/projects/Createproject';
@@ -15,7 +15,7 @@ function App() {
       <Navbar/>
       <Switch>
         <Route exact path="/" component={Dashboard}></Route>
-        <Route path="/projectdetails" component={ProjectDetails}></Route>
+        <Route path="/project/:id" component={Projectdetails}></Route>
         <Route path="/signin" component={Signin}></Route>
         <Route path="/signup" component={Signup}></Route>
         <Route path="/createproject" component={Createproject}></Route>
